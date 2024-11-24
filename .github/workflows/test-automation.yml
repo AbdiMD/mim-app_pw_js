@@ -11,7 +11,7 @@ jobs:
     steps:
     # Step 1: Checkout Automation Repository
     - name: Checkout Automation Repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     # Step 2: Install Dependencies
     - name: Install Dependencies
