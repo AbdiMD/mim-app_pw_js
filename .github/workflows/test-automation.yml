@@ -32,4 +32,4 @@ jobs:
 
     #Step 6: Generate GitHub Actions Report
     - name: Generate GitHub Actions Report
-      run: npx github-actions-reporter --input playwright-report.json --output gha-report.json
+      run: npx @estruyf/github-actions-reporter --input playwright-report.json --output gha-report.json
