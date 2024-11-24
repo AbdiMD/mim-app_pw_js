@@ -13,6 +13,10 @@ jobs:
     - name: Checkout Automation Repo
       uses: actions/checkout@v4
 
+    # Step 2: Install Playwright
+    - name: Install Playwright
+      run: npx playwright install
+
     # Step 2: Install Dependencies
     - name: Install Dependencies
       run: npm install
