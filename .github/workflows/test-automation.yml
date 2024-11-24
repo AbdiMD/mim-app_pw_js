@@ -25,9 +25,9 @@ jobs:
     - name: Install Browser
       run: npx playwright install
 
-    # Step 5: Install Allure Reporer
-    - name: Install Allure Reporter
-      run: scoop install allure
+    # Step 5: Install Allure CLI
+    - name: Install Allure CLI
+      run: npm install -g allure-commandline --save-dev
 
     # Step 6: Run Playwright Tests
     - name: Run Playwright Tests
