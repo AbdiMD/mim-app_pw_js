@@ -27,4 +27,9 @@ jobs:
 
     # Step 5: Run Playwright Tests
     - name: Run Playwright Tests
-      run: npx playwright test
+      run: |
+        npx playwright test --reporter=json > playwright-report.json
+
+    #Step 6: Generate GitHub Actions Report
+    - name: Generate GitHub Actions Report
+      run: npx @estruyf/github-actions-reporter --input playwright-report.json --output gha-report.json
