@@ -1,0 +1,17 @@
+{
+  "name": "orange-hrm_pw_js",
+  "version": "1.0.0",
+  "description": "test automation script demo",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Abdi",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "prettier": "^3.3.3"
+  }
+}
