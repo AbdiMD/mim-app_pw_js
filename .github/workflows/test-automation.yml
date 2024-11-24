@@ -1,0 +1,22 @@
+name: Playwright Test Automation
+
+on:
+  repository_dispatch:
+    types: deploy
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout Automation Repository
+    - name: Checkout Automation Repo
+      uses: actions/checkout@v3
+
+    # Step 2: Install Dependencies
+    - name: Install Dependencies
+      run: npm install
+
+    # Step 3: Run Playwright Tests
+    - name: Run Playwright Tests
+      run: npm run test
