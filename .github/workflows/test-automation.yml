@@ -2,7 +2,7 @@ name: Playwright Test Automation
 
 on:
   repository_dispatch:
-    types: deploy
+    types: [deploy]
 
 jobs:
   test:
