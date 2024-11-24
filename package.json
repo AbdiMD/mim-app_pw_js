@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "test automation script demo",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test"
+  },
   "author": "Abdi",
   "license": "ISC",
   "devDependencies": {
