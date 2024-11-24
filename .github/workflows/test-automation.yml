@@ -21,6 +21,10 @@ jobs:
     - name: Install Dependencies
       run: npm install
 
-    # Step 4: Run Playwright Tests
+    # Step 4: Install Browser
+    - name: Install Browser
+      run: npx playwright install
+
+    # Step 5: Run Playwright Tests
     - name: Run Playwright Tests
       run: npx playwright test
