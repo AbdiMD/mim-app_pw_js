@@ -11,5 +11,6 @@ require('dotenv').config()
 // })
 
 test("Test CI/CD", async({page})=>{
-  console.log("Automation triggered")
+  console.log("Automation triggered");
+  await page.goto("http://localhost:3000")
 })
